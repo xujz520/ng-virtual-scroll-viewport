@@ -10,7 +10,7 @@ import { TableComponent } from './table.component';
 import { ContentVisibilityComponent } from './content-visibility.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'content-visibility' },
+  { path: '', pathMatch: 'full', redirectTo: 'table' },
   { path: 'test', component: TestComponent },
   { path: 'table', component: TableComponent },
   { path: 'content-visibility', component: ContentVisibilityComponent },
@@ -22,12 +22,9 @@ const routes: Routes = [
     VirtualScrollViewportComponent,
     TestComponent,
     TableComponent,
-    ContentVisibilityComponent
+    ContentVisibilityComponent,
   ],
-  imports: [
-    BrowserModule,
-    RouterModule.forRoot(routes),
-  ],
+  imports: [BrowserModule, RouterModule.forRoot(routes)],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
