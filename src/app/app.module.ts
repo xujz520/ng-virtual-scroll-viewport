@@ -24,7 +24,7 @@ const routes: Routes = [
     TableComponent,
     ContentVisibilityComponent,
   ],
-  imports: [BrowserModule, RouterModule.forRoot(routes)],
+  imports: [BrowserModule, RouterModule.forRoot(routes, { useHash: true })],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
